@@ -1,0 +1,38 @@
+
+
+.clientInfoheader {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #c80a00;
+}
+
+.clientInfoBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 30px;
+}
+.headBox{
+    background-color: #fff4f4;
+    padding: 10px;
+}
+.headBox h5 {
+    font-size: 15px;
+    color: #c80a00;
+}
+
+.contentBox {
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input.form-control {
+    border-radius: 6px;
+    padding: 7px;
+    font-size: 12px;
+}
+
+

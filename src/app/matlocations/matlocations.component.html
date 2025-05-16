@@ -1,0 +1,48 @@
+<!-- <table id="examples" class="display taBleColor mt-1" width="100%">
+    <thead>
+      <tr>
+        <th>DATE</th>
+        <th>INVOICE #</th>
+        <th>AMOUNT</th>
+        <th>AMT PAID</th>
+        <th>BAL OS</th>
+        <th>PAID ?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of rowsdata" (click)="navigateToDetails(item)" style="cursor: pointer;">
+        <td>{{ item.product }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.price }}</td>
+      </tr>
+    </tbody>
+</table>
+   -->
+
+   <table id="examples" class="display taBleColor mt-1" width="100%">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Date</th>
+        <th>Photo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of rowsdata" (click)="navigateToDetails(item)" style="cursor: pointer;">
+        <td>{{ item.NameFirst }}</td>
+        <td>{{ item.Phone }}</td>
+        <td>{{ item.Date }}</td>
+        <td>
+          <!-- <button (click)="downloadPhoto(item)">Download</button> -->
+             <button (click)="downloadPhoto(item)">Download</button>
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+  

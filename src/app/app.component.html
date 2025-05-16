@@ -1,0 +1,32 @@
+<div *ngIf="!isLoginPage" class="kex-header d-flex justify-content-between align-items-center">
+    <div class="kex-logo">
+        <img [src]="'kexlogo.png'" alt="Company Logo" class="logo">
+    </div>
+    <div class="kex-headings">
+        <button class="btn headBtn" [ngClass]="{'active-btn': activeButton === 'client'}" (click)="navigateToclientInfo()">Client Info</button>
+
+        <button class="btn headBtn" [ngClass]="{'active-btn': activeButton === 'delivery'}" 
+                (click)="navigateToDelivery()">Delivery Note</button>
+
+        <button class="btn headBtn" [ngClass]="{'active-btn': activeButton === 'invoices'}" 
+                (click)="navigateToInvoices()">Invoices</button>
+
+        <button class="btn headBtn" [ngClass]="{'active-btn': activeButton === 'customeorders'}" 
+                (click)="showContent('customeorders')">Custom Orders</button>
+
+        <button class="btn headBtn" 
+                [ngClass]="{'active-btn': activeButton === 'mat'}" 
+                (click)="navigateMatLocations()">Mat Locations</button>
+
+        <i class="bi bi-power headBtnicon"></i>
+    </div>
+</div>
+<div class="kex-content">
+    <div class="clientinfo container-fluid">
+        <router-outlet />
+    </div>
+</div>
+
+<div *ngIf="!isLoginPage" class="kex-footer">
+    © Copyright 2025 KEX Limited. All Rights Reserved.
+</div>

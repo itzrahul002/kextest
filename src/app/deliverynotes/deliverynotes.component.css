@@ -1,0 +1,33 @@
+.taBleColor th{
+    background-color: #fff4f4;
+    color: #c80a00;
+    padding: 5px;
+}
+#example thead th {
+    text-align: center;
+  }
+  
+  /* Change background color and text color of pagination buttons */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    background-color: #00ff37;  /* Blue background */
+    color: white !important;    /* White text */
+    border: 1px solid #ff0040;
+    border-radius: 4px;
+    margin: 0 2px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* Highlight the active page */
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background-color: #0fb300 !important;  /* Darker blue */
+    border-color: #b31b00;
+  }
+  
+  /* On hover */
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color: #d95300;
+    border-color: #cc008f;
+    color: white !important;
+  }
+  

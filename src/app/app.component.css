@@ -1,0 +1,65 @@
+.kex-header{
+    background-color: #c80a00;
+    margin: 0;
+    height: 60px;
+}
+.kex-logo img{
+    width: 200px;
+    padding: 10px;
+    background: white;
+    height: auto;
+}
+
+.headBtn{
+    color: white;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.headBtnicon{
+    color: white;
+    margin: 20px;
+    top: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+.headBtn:hover{
+    background-color: white !important;
+    color: #c80a00 !important;
+    border: 1px solid #c80a00;
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+  .active-btn {
+    background-color: white !important;
+    color: #c80a00 !important;
+    border: 1px solid #c80a00;
+    border-radius: 50px;
+    padding: 5px 10px;
+  }
+  
+  .kex-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #c80a00;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 0;
+}
+/* clientInfo */
+
+.clientinfo{
+    padding: 20px 50px;
+}
+
+.RedFont{
+    color: #c80a00;
+}

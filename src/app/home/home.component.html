@@ -1,0 +1,246 @@
+        <div class="clientinfo container-fluid">
+            <div class="clientInfoheader d-flex justify-content-between align-items-center">
+                <h5>Bhagwansingh Private Limited (1130)</h5>
+                <button type="button" class="btn btn-danger">Edit<i class="bi bi-pencil-square"></i></button>
+            </div>
+        
+            <!-- <div class="clientInfoBox">
+                <div class="headBox">
+                    <h5>CLIENT INFO</h5>
+                </div>
+                <div class="contentBox">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <label>Client ID</label>
+                                <input type="text" class="form-control" id="inputclientid">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Client Name</label>
+                                <input type="text" class="form-control" id="inputclientname">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Trading</label>
+                                <input type="text" class="form-control" id="inputtrading">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Trading Name</label>
+                                <input type="text" class="form-control" id="inputtradingname">
+                            </div>
+                        </div>
+        
+                        <div class="row mt-1">
+                            <div class="col-md-6 col-lg-3">
+                                <label>Billing Type</label>
+                                <input type="text" class="form-control" id="inputbillingtype">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Billing Frequency</label>
+                                <input type="text" class="form-control" id="inputbillingfrequency">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Type</label>
+                                <input type="text" class="form-control" id="inputtype">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Monthly</label>
+                                <input type="text" class="form-control" id="inputmonthly">
+                            </div>
+                        </div>
+
+                        <div class="row mt-1">
+                            <div class="col-md-12 col-lg-3">
+                                <label class="me-2">Fortnightly</label>
+                                <label class="me-2">first</label>
+                                <div class="s d-flex align-items-center col-6">
+                                    <input type="text" class="form-control col-4 me-1">
+                                    <input type="text" class="form-control col-2">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div> -->
+            
+            <div class="clientInfoBox">
+                <div class="headBox">
+                  <h5>CLIENT INFO</h5>
+                </div>
+                <div class="contentBox">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6 col-lg-3">
+                        <label>Client ID</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['Client: #']" name="clientId">
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <label>Client Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['Client: Name']" name="clientName">
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <label>Trading</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['Username']" name="trading">
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <label>Trading Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['Contact: Trading Name']" name="tradingName">
+                      </div>
+                    </div>
+              
+                    <div class="row mt-1">
+                      <div class="col-md-6 col-lg-3">
+                        <label>Billing Type</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['BillingType']" name="billingType">
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <label>Billing Frequency</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['BillingFreguency']" name="billingFrequency">
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <label>Type</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['Client: Type']" name="type">
+                      </div>
+                      <div class="col-md-6 col-lg-3">
+                        <label>Monthly</label>
+                        <input type="text" class="form-control" [(ngModel)]="client['MontlhyRouteSort']" name="monthly">
+                      </div>
+                    </div>
+              
+                    <div class="row mt-1">
+                      <div class="col-md-12 col-lg-3">
+                        <label class="me-2">Fortnightly</label>
+                        <div class="d-flex align-items-center col-6">
+                          <input type="text" class="form-control col-4 me-1" [(ngModel)]="client['FortNightlyRouteSort']" name="fortnightly1">
+                          <input type="text" class="form-control col-2" name="fortnightly2">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+            
+            <div class="clientInfoBox">
+                <div class="headBox">
+                    <h5>BILLING INFO</h5>
+                </div>
+                <div class="contentBox">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="inputclientid">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Position</label>
+                                <input type="text" class="form-control" id="inputclientname">
+                            </div>
+                          
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-1">
+                                            <label class="d-block">Phone 1</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div>
+                                            <label class="d-block">Ext</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-1">
+                                            <label class="d-block">Phone 2</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div>
+                                            <label class="d-block">Ext</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+        
+                        <div class="row mt-1">
+                            <div class="col-md-6 col-lg-3">
+                                <label>Cellular</label>
+                                <input type="text" class="form-control" id="inputbillingtype">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Email</label>
+                                <input type="text" class="form-control" id="inputbillingfrequency">
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <label>Billing Address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="clientInfoBox">
+                <div class="headBox">
+                    <h5>DELIVERY INFO</h5>
+                </div>
+                <div class="contentBox">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="inputclientid">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Position</label>
+                                <input type="text" class="form-control" id="inputclientname">
+                            </div>
+                          
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-1">
+                                            <label class="d-block">Phone 1</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div>
+                                            <label class="d-block">Ext</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="col-md-6 col-lg-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-1">
+                                            <label class="d-block">Phone 2</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div>
+                                            <label class="d-block">Ext</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+        
+                        <div class="row mt-1">
+                            <div class="col-md-6 col-lg-3">
+                                <label>Cellular</label>
+                                <input type="text" class="form-control" id="inputbillingtype">
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <label>Email</label>
+                                <input type="text" class="form-control" id="inputbillingfrequency">
+                            </div>
+                            <div class="col-md-12 col-lg-6">
+                                <label>Delivery Address</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    

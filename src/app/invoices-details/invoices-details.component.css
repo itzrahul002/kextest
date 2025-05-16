@@ -1,0 +1,57 @@
+.RedFont{
+    color: #c80a00;
+}
+.invoice-detailsbox1{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 15px;
+}
+.invoice-detailsbox1-head{
+    color: #c80a00;
+    background-color: #fff4f4;
+    padding: 15px;
+}
+.invoice-detailsbox1-head h5{
+    color: #c80a00;
+    font-size: 16px;
+}
+.invoice-detailsbox2{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    padding: 15px;
+}
+.invoice-detailsbox2-head{
+    color: #c80a00;
+    background-color: #fff4f4;
+    padding: 5px 10px;
+}
+.invoice-detailsbox2-head h5{
+    color: #c80a00;
+    font-size: 16px;
+}
+.invoice-custom-table{
+    font-size: 12px;
+    font-weight: normal;
+}
+.invoice-custom-table th {
+    height: 35px; 
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .invoice-custom-table tr:nth-child(odd) th {
+    color: #c80a00;
+    background-color: #fff4f4;
+  }
+  
+  .invoice-custom-table tr:nth-child(even) th {
+    color: black;
+  }
+  .invoice-right{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .taBleColor th{
+    background-color: #fff4f4;
+    color: #c80a00;
+}

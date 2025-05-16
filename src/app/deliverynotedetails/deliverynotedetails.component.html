@@ -1,0 +1,163 @@
+<div>
+    <div *ngIf="isLoading" class="loader">
+        Loading
+      </div>
+<div class="clientInfoheader d-flex justify-content-between align-items-center">
+    <h5 class="RedFont">Bhagwansingh Private Limited (1130)</h5>
+    <button type="button" class="btn btn-danger"><i class="bi bi-reply-fill"></i></button>
+</div>
+
+<div class="d-note-Box1 mt-1">
+    <form>
+        <div class="row">
+            <div class="col-md-6 col-lg-2">
+                <label>Delivery Note #</label>
+                <input type="text" class="form-control" id="inputdeliverynoteid">
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <label>Batch ID</label>
+                <input type="text" class="form-control" id="inputBatchid">
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <label>Date</label>
+                <input type="text" class="form-control" id="inputdate">
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <label>RUN</label>
+                <input type="text" class="form-control" id="inputrun">
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <label>VEHICLE #</label>
+                <input type="text" class="form-control" id="inputvehicle" readonly>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="d-note-Box2 col-12 mt-1">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="d-note-left-header">
+                <h5>CLIENT INFO</h5>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <label>Client #</label>
+                        <input type="text" class="form-control" id="inputClientNumber">
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <label>Client Name</label>
+                        <input type="text" class="form-control" id="inputClientName" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <label>Trading</label>
+                        <input type="text" class="form-control" id="inputTrading">
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <label>Trading Name</label>
+                        <input type="text" class="form-control" id="inputTradingName" readonly>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-start">
+                            <div class="me-2">
+                                <label class="d-block">Phone 1</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div>
+                                <label class="d-block">Ext</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="d-note-left-header">
+                <h5>DELIVERY INFO</h5>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="inputDeliveryName">
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="d-flex align-items-start">
+                            <div class="me-2">
+                                <label class="d-block">Phone 1</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div>
+                                <label class="d-block">Ext</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <label>Trading</label>
+                        <textarea class="form-control" id="inputDeliveryTrading" rows="3"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="d-note-Box3 col-12 mt-1">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="d-note-left-header">
+                <h5>Billing Address</h5>
+            </div>
+            <form>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <textarea class="form-control" id="input    BillingAddress" rows="4"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  <table id="example" class="display taBleColor mt-1" width="100%">
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of rows">
+        <td>{{ item.product }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="d-note-Box4 col-12 mt-1 mb-4">
+    <div class="row">
+        <div class="col-lg-12">
+            <form>
+                <div class="row mt-2">
+                    <label>Comments</label>
+                    <div class="col-12">
+                        <textarea class="form-control" id="input    BillingAddress" rows="6"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
